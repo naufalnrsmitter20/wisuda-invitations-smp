@@ -8,6 +8,12 @@ import SVGSaveDate from "@/public/svg/SVGSaveDate";
 export default function SaveDate() {
   const [now, setNow] = useState(new Date());
   const targetDate = new Date("2024-06-15T08:00:00");
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,11 +22,19 @@ export default function SaveDate() {
     return () => clearInterval(interval);
   }, []);
 
-  const diff = Math.max(targetDate.getTime() - now.getTime(), 0);
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / 1000 / 60) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = new Date();
+      const diff = Math.max(new Date(targetDate).getTime() - now.getTime(), 0);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      setTimeLeft({ days, hours, minutes, seconds });
+    };
+
+    updateCountdown();
+  });
 
   return (
     <React.Fragment>
@@ -32,19 +46,19 @@ export default function SaveDate() {
         </div>
         <main className="grid grid-cols-4 gap-6 max-w-sm mx-auto mt-14">
           <div>
-            <h5 className="text-[48px] font-normal text-center">{days}</h5>
+            <h5 className="text-[48px] font-normal text-center">{timeLeft.days}</h5>
             <p className="text-[24px] font-normal text-center -mt-2">Hari</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{hours}</h5>
+            <h5 className="text-[48px] font-normal text-center">{timeLeft.hours}</h5>
             <p className="text-[24px] font-normal text-center -mt-2">Jam</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{minutes}</h5>
+            <h5 className="text-[48px] font-normal text-center">{timeLeft.minutes}</h5>
             <p className="text-[24px] font-normal text-center -mt-2">Menit</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{seconds}</h5>
+            <h5 className="text-[48px] font-normal text-center">{timeLeft.seconds}</h5>
             <p className="text-[24px] font-normal text-center -mt-2">Detik</p>
           </div>
         </main>
