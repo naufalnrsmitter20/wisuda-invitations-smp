@@ -28,9 +28,9 @@ export default function Header() {
         <Image src={grad1left} alt="gambar" className="absolute bottom-0 w-52 md:w-64 lg:w-96 xl:w-[400px] -z-10 left-0" />
         <Image src={grad1right} alt="gambar" className="absolute bottom-0 w-52 md:w-64 lg:w-96 xl:w-[400px] -z-10 right-0" />
         <div className="flex justify-center">
-          <button className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-yellow-200 font-medium rounded-lg mt-4 text-sm px-6 py-3.5 text-center" onClick={() => router.push("#undangan")}>
+          <a href="#undangan" className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-yellow-200 font-medium rounded-lg mt-4 text-sm px-6 py-3.5 text-center">
             Lihat Undangan
-          </button>
+          </a>
         </div>
       </footer>
     </header>
