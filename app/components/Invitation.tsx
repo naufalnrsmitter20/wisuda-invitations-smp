@@ -79,6 +79,7 @@ export default function Invitation() {
         </form>
         <Image src={grad2left} alt="grad2l" className="absolute left-0 bottom-0 h-[344px] -z-10 object-cover" />
         <Image src={grad2right} alt="grad2r" className="absolute right-0 bottom-0 h-[344px] -z-10 object-cover" />
+        <Toaster />
       </section>
       {userData && (
         <section className="relative h-[765px] w-full mt-6">
