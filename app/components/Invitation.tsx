@@ -152,9 +152,19 @@ export default function Invitation() {
                   required
                 />
               </div>
-              <button type="submit" className="text-gray-900 mt-6 rounded-md bg-transparent border-black border-2 focus:ring-4 focus:outline-none focus:ring-slate-200 text-[16px] font-semibold font-Judson text-center py-2.5 px-3">
-                {visible ? "Loading.." : "Konfirmasi Kehadiran"}
-              </button>
+              {visible ? (
+                <button
+                  type="button"
+                  disabled
+                  className="text-gray-900 mt-6 rounded-md bg-transparent border-black border-2 focus:ring-4 focus:outline-none focus:ring-slate-200 text-[16px] font-semibold font-Judson text-center py-2.5 px-3"
+                >
+                  Loading...
+                </button>
+              ) : (
+                <button type="submit" className="text-gray-900 mt-6 rounded-md bg-transparent border-black border-2 focus:ring-4 focus:outline-none focus:ring-slate-200 text-[16px] font-semibold font-Judson text-center py-2.5 px-3">
+                  Konfirmasi Kehadiran
+                </button>
+              )}
               <Toaster />
             </form>
           </div>
