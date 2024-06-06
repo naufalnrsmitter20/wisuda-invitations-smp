@@ -7,7 +7,7 @@ import grad3right from "@/public/img/graduation-3-right.png";
 import SVGSaveDate from "@/public/svg/SVGSaveDate";
 export default function SaveDate() {
   const [now, setNow] = useState(new Date());
-  const targetDate = new Date("2024-06-15T08:00:00");
+  const targetDate = new Date("2024-06-15T07:30:00");
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,

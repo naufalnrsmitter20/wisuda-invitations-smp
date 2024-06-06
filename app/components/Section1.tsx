@@ -38,11 +38,11 @@ export default function Section1() {
             </div>
           </div>
           <main className="mt-10">
-            <h5 className="text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-center">Wisuda Angkatan XXI SMP Negeri 3 Kepanjen</h5>
-            <h5 className="text-[24px] font-light text-center">07:00 - 12:30 WIB</h5>
+            <h5 className="text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-center">Purnawiyata Siswa Kelas IX SMP Negeri 3 Kepanjen</h5>
+            <h5 className="text-[24px] font-light text-center">07:30 WIB - Selesai</h5>
             <div className="w-[400px] md:w-[500px] lg:w-[666px] xl:w-[809px] h-0.5 mt-4 bg-black mx-auto"></div>
-            <h5 className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-medium mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Graha Cakrawala UM</h5>
-            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Jalan Cakrawala , Sumbersari, Kecamatan Lowokwaru </h5>
+            <h5 className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-medium mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Pelataran Pura Sapto Argo Desa Kesamben</h5>
+            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Jl. Melati, Kesamben, Kec. Ngajum, Kabupaten Malang, Jawa Timur 65164</h5>
             <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal -m-2 text-center">Kota Malang</h5>
           </main>
         </section>

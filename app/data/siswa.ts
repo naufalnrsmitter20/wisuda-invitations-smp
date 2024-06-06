@@ -1,5 +1,3 @@
-import { ISiswa } from "./ModelData";
-
 export const dataSiswa = {
   siswa: [
     {

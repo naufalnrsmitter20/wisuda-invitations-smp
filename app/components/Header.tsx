@@ -18,11 +18,11 @@ export default function Header() {
         <Image src={logoSMP} alt="SMPN 5 Kepanjen" />
         <Image src={logoKemendikbud} alt="SMPN 5 Kepanjen" />
       </nav>
-      <main className="mx-auto max-w-5xl mt-44">
+      <main className="mx-auto max-w-5xl mt-40">
         <h2 className="font-Judson text-[20px] md:text-[26px] lg:text-[30px] xl:text-[36px] uppercase text-center">Undangan</h2>
-        <h1 className="font-Jacques_Francois text-[32px] md:text-[42px] lg:text-[52px] xl:text-[64px] uppercase text-center mt-[6px]">WISUDA ANGKATAN XXI</h1>
+        <h1 className="font-Jacques_Francois text-[32px] md:text-[42px] lg:text-[52px] xl:text-[64px] uppercase text-center mt-[6px]">PURNAWIYATA SISWA KELAS IX</h1>
+        <h1 className="font-Jacques_Francois text-[32px] md:text-[42px] lg:text-[52px] xl:text-[64px] uppercase text-center mt-[6px]">Tahun Ajaran 2023/2024</h1>
         <h2 className="font-Judson text-[20px] md:text-[28px] lg:text-[30px]  xl:text-[36px] uppercase text-center mt-[10px] lg:mt-[28px]">SMP NEGERI 3 KEPANJEN</h2>
-        <h2 className="font-Judson text-[20px] md:text-[28px] lg:text-[30px] xl:text-[36px] uppercase text-center mt-[10px] font-semibold">15 . 06 . 2024</h2>
       </main>
       <footer>
         <Image src={grad1left} alt="gambar" className="absolute bottom-0 w-52 md:w-64 lg:w-96 xl:w-[400px] -z-10 left-0" />
