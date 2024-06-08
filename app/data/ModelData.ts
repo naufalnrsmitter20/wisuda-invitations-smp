@@ -3,7 +3,7 @@ export interface ISiswa {
     {
       nama_siswa: string;
       kelas: string;
-      nama_wali_murid: string;
+      orang_tua: string;
       nowa: number;
       token_inv: string;
     }

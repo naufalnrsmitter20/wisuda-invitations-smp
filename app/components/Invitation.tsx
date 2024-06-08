@@ -12,10 +12,10 @@ const ScriptURL = "https://script.google.com/macros/s/AKfycbz84eNkfR8RfFVqFWa08l
 
 export default function Invitation() {
   const [invitationCode, setInvitationCode] = useState("");
-  const [userData, setUserData] = useState<{ nama_siswa: string; kelas: string; token_inv: string } | null>(null);
-  const [waliMurid, setWaliMurid] = useState("");
+  const [userData, setUserData] = useState<{ nama_siswa: string; kelas: string; token_inv: string; orang_tua: string } | null>(null);
   const [noWhatsApp, setNoWhatsApp] = useState("");
   const [visible, setIsVisible] = useState(false);
+  const [mutating, setMutating] = useState(false);
   const router = useRouter();
 
   const notifyErr = () => toast.error("Token tidak valid!");
@@ -48,11 +48,13 @@ export default function Invitation() {
       });
       notifySubmitSuccess();
       setIsVisible(false);
+      setMutating(true);
       console.log("Success!", response);
       router.refresh();
     } catch (error) {
       console.error("Error!", (error as Error).message);
       setIsVisible(false);
+      setMutating(false);
       notifySubmitError();
     }
   };
@@ -126,15 +128,15 @@ export default function Invitation() {
                 />
               </div>
               <div className="mt-4">
-                <label htmlFor="nama_wali_murid" className="font-Karla font-semibold text-[16px]">
+                <label htmlFor="orang_tua" className="font-Karla font-semibold text-[16px]">
                   Nama Wali Murid :
                 </label>
                 <input
                   type="text"
-                  value={waliMurid}
-                  onChange={(e) => setWaliMurid(e.target.value)}
-                  id="nama_wali_murid"
-                  name="nama_wali_murid"
+                  value={userData.orang_tua}
+                  readOnly
+                  id="orang_tua"
+                  name="orang_tua"
                   className="bg-transparent font-semibold border-2 mt-1 border-black text-gray-900 text-sm rounded-lg focus:ring-yellow-100 focus:border-yellow-300 block w-full p-2.5"
                   required
                 />
@@ -162,7 +164,11 @@ export default function Invitation() {
                   Loading...
                 </button>
               ) : (
-                <button type="submit" className="text-gray-900 mt-6 rounded-md bg-transparent border-black border-2 focus:ring-4 focus:outline-none focus:ring-slate-200 text-[16px] font-semibold font-Judson text-center py-2.5 px-3">
+                <button
+                  disabled={mutating}
+                  type="submit"
+                  className="text-gray-900 mt-6 rounded-md bg-transparent border-black border-2 focus:ring-4 focus:outline-none focus:ring-slate-200 text-[16px] font-semibold font-Judson text-center py-2.5 px-3"
+                >
                   Konfirmasi Kehadiran
                 </button>
               )}
