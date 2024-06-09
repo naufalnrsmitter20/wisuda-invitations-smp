@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Undangan Wisuda SMPN 5 Kepanjen",
+  title: "Undangan Wisuda SMPN 2 NGAJUM",
   description: "Graduation Invitation",
 };
 
