@@ -42,7 +42,7 @@ export default function Gallery() {
   return (
     <React.Fragment>
       <section className="bg-gradient-to-r py-10 from-yellow-200 to-green-100">
-        <h4 className="font-Judson text-[36px] text-center font-semibold">Gallery</h4>
+        <h4 className="font-Judson text-[36px] text-center font-semibold mt-6">Gallery</h4>
         <div className="my-10 mx-6">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 max-w-fit mx-auto">
             {photos.map((photo, index) => (
