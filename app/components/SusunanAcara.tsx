@@ -7,8 +7,8 @@ export default function SusunanAcara() {
     <React.Fragment>
       <section className="pt-20 bg-gradient-to-tr from-yellow-300 to-green-100">
         <div className="max-w-6xl mx-auto relative">
-          <h4 className="font-Judson text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] font-semibold">Susunan Acara</h4>
-          <main className="font-Karla text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] ml-8 mt-6">
+          <h4 className="font-Judson text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] font-semibold px-2">Susunan Acara</h4>
+          <main className="font-Karla text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] ml-8 mt-6 px-2">
             <p>01. Pembukaan</p>
             <p>02. Menyanyikan Lagu Indonesia Raya</p>
             <p>03. Pembacaan ayat Suci Al Quran</p>
