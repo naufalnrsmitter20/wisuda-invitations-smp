@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import logoSMP from "@/public/svg/logo-smp.svg";
+import logoSMP from "@/public/svg/smpn2ngajum.svg";
 import logoKemendikbud from "@/public/svg/logo-kemendikbud.svg";
 import mainBG from "@/public/img/jumbotron.png";
 import grad1left from "@/public/img/graduation-1-left.png";
 import grad1right from "@/public/img/graduation-1-right.png";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Header() {
@@ -22,7 +21,7 @@ export default function Header() {
         <h2 className="font-Judson text-[20px] md:text-[26px] lg:text-[30px] xl:text-[36px] uppercase text-center">Undangan</h2>
         <h1 className="font-Jacques_Francois text-[32px] md:text-[42px] lg:text-[52px] xl:text-[64px] uppercase text-center mt-[6px]">PURNAWIYATA SISWA KELAS IX</h1>
         <h1 className="font-Jacques_Francois text-[32px] md:text-[42px] lg:text-[52px] xl:text-[64px] uppercase text-center mt-[6px]">Tahun Ajaran 2023/2024</h1>
-        <h2 className="font-Judson text-[20px] md:text-[28px] lg:text-[30px]  xl:text-[36px] uppercase text-center mt-[10px] lg:mt-[28px]">SMP NEGERI 3 KEPANJEN</h2>
+        <h2 className="font-Judson text-[20px] md:text-[28px] lg:text-[30px]  xl:text-[36px] uppercase text-center mt-[10px] lg:mt-[28px]">SMP NEGERI 2 NGAJUM</h2>
       </main>
       <footer>
         <Image src={grad1left} alt="gambar" className="absolute bottom-0 w-52 md:w-64 lg:w-96 xl:w-[400px] -z-10 left-0" />

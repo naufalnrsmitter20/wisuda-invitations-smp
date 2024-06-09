@@ -40,30 +40,30 @@ export default function SaveDate() {
     <React.Fragment>
       <section className="h-[517px] relative w-full">
         <Image src={mainBG} className="w-full h-[517px] object-cover object-top absolute -z-10" alt="img" />
-        <h2 className="font-Judson text-[48px] font-bold pt-20 text-center ">15 Juni 2024</h2>
-        <div className="flex justify-center mt-12">
+        <h2 className="font-Judson text-[36px] sm:text-[38px] md:text-[40px] lg:text-[42px] xl:text-[48px] font-bold pt-20 text-center ">15 Juni 2024</h2>
+        <div className="flex justify-center mt-12 scale-75 lg:scale-90 xl:scale-100">
           <SVGSaveDate />
         </div>
-        <main className="grid grid-cols-4 gap-6 max-w-sm mx-auto mt-14">
+        <main className="grid grid-cols-4 gap-6 max-w-sm mx-auto mt-14 px-2">
           <div>
-            <h5 className="text-[48px] font-normal text-center">{timeLeft.days}</h5>
-            <p className="text-[24px] font-normal text-center -mt-2">Hari</p>
+            <h5 className="text-[36px] sm:text-[38px] md:text-[40px] lg:text-[42px] xl:text-[48px] font-normal text-center">{timeLeft.days}</h5>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-normal text-center -mt-2">Hari</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{timeLeft.hours}</h5>
-            <p className="text-[24px] font-normal text-center -mt-2">Jam</p>
+            <h5 className="text-[36px] sm:text-[38px] md:text-[40px] lg:text-[42px] xl:text-[48px] font-normal text-center">{timeLeft.hours}</h5>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-normal text-center -mt-2">Jam</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{timeLeft.minutes}</h5>
-            <p className="text-[24px] font-normal text-center -mt-2">Menit</p>
+            <h5 className="text-[36px] sm:text-[38px] md:text-[40px] lg:text-[42px] xl:text-[48px] font-normal text-center">{timeLeft.minutes}</h5>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-normal text-center -mt-2">Menit</p>
           </div>
           <div>
-            <h5 className="text-[48px] font-normal text-center">{timeLeft.seconds}</h5>
-            <p className="text-[24px] font-normal text-center -mt-2">Detik</p>
+            <h5 className="text-[36px] sm:text-[38px] md:text-[40px] lg:text-[42px] xl:text-[48px] font-normal text-center">{timeLeft.seconds}</h5>
+            <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-normal text-center -mt-2">Detik</p>
           </div>
         </main>
-        <Image src={grad3left} alt="grad2l" className="absolute left-0 bottom-0 h-[517px] -z-10 object-cover" />
-        <Image src={grad3right} alt="grad2r" className="absolute right-0 bottom-0 h-[517px] -z-10 object-cover" />
+        <Image src={grad3left} alt="grad2l" className="absolute left-0 bottom-0 w-[200px] sm:w-[280px] md:w-[360px] lg:w-[480px] xl:w-auto h-[517px] -z-10 object-cover" />
+        <Image src={grad3right} alt="grad2r" className="absolute right-0 bottom-0 w-[200px] sm:w-[280px] md:w-[360px] lg:w-[480px] xl:w-auto h-[517px] -z-10 object-cover" />
       </section>
     </React.Fragment>
   );

@@ -4,7 +4,7 @@ export default function Section1() {
   return (
     <React.Fragment>
       <main className="relative w-full py-16 bg-gradient-to-r from-green-100 to-yellow-200" id="undangan">
-        <section className="max-w-5xl mx-auto">
+        <section className="max-w-5xl mx-auto px-2">
           <div className="flex justify-center">
             <div>
               <svg width="60" height="22" viewBox="0 0 60 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,12 +38,12 @@ export default function Section1() {
             </div>
           </div>
           <main className="mt-10">
-            <h5 className="text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-center">Purnawiyata Siswa Kelas IX SMP Negeri 3 Kepanjen</h5>
+            <h5 className="text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-center">Purnawiyata Siswa Kelas IX SMP Negeri 2 Ngajum</h5>
             <h5 className="text-[24px] font-light text-center">07:30 WIB - Selesai</h5>
-            <div className="w-[400px] md:w-[500px] lg:w-[666px] xl:w-[809px] h-0.5 mt-4 bg-black mx-auto"></div>
+            <div className="w-[260px] md:w-[500px] lg:w-[666px] xl:w-[809px] h-0.5 mt-4 bg-black mx-auto"></div>
             <h5 className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-medium mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Pelataran Pura Sapto Argo Desa Kesamben</h5>
-            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Jl. Melati, Kesamben, Kec. Ngajum, Kabupaten Malang, Jawa Timur 65164</h5>
-            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal -m-2 text-center">Kota Malang</h5>
+            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-center">Jl. Melati, Kesamben, Kec. Ngajum</h5>
+            <h5 className="text-[15px] md:text-[18px] lg:text-[22px] xl:text-[24px] font-normal -m-2 text-center">Kabupaten Malang, Jawa Timur 65164</h5>
           </main>
         </section>
       </main>

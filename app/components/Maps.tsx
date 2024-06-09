@@ -4,7 +4,7 @@ function Maps() {
   return (
     <React.Fragment>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8326835800362!2d112.59237887455924!3d-8.118512281244698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789e484edb0e0f%3A0xd34bb03856140841!2sSMP%20Negeri%203%20Kepanjen!5e0!3m2!1sid!2sid!4v1716985359199!5m2!1sid!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d666.6232750270258!2d112.55996227885778!3d-8.059567836700442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789c4566b976a1%3A0xe3795bca5f01e895!2zUHVyYSBTYW1iaSBBZ3VuZyBTQVBUTyBBUkdPICjqpqXqprjqpqvqprHqpqnqp4DqpqfqprbqpoTqppLqprjqpoHqprHqpqXqp4DqpqDqpoTqpoLqppLqp4DqppIp!5e0!3m2!1sid!2sid!4v1717899480579!5m2!1sid!2sid"
         className="w-full h-[657px]"
         loading="lazy"
       ></iframe>

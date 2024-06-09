@@ -63,9 +63,10 @@ export default function Invitation() {
     <React.Fragment>
       <section className="relative h-[344px] w-full">
         <Image src={mainBG} className="w-full h-[344px] object-cover object-top absolute -z-10" alt="img" />
-        <h2 className="font-Judson text-[36px] text-center pt-12 z-10">Dapatkan E-invitation Anda</h2>
-        <h2 className="text-[24px] text-center pt-16 z-10">Masukkan 6 digit kode undangan Anda</h2>
-        <form className="flex gap-x-4 justify-center items-center mt-6" onSubmit={handleSubmit}>
+        <div></div>
+        <h2 className="font-Judson text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] mx-2 text-center pt-12 z-10">Dapatkan E-invitation Anda</h2>
+        <h2 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] text-center pt-16 z-10">Masukkan 6 digit kode undangan Anda</h2>
+        <form className="flex gap-x-4 mx-2 md:mx-0 justify-center items-center mt-6" onSubmit={handleSubmit}>
           <input
             type="text"
             id="first_name"
@@ -79,15 +80,15 @@ export default function Invitation() {
             RSVP
           </button>
         </form>
-        <Image src={grad2left} alt="grad2l" className="absolute left-0 bottom-0 h-[344px] -z-10 object-cover" />
-        <Image src={grad2right} alt="grad2r" className="absolute right-0 bottom-0 h-[344px] -z-10 object-cover" />
+        <Image src={grad2left} alt="grad2l" className="absolute w-[200px] sm:w-[280px] md:w-[360px] lg:w-[480px] xl:w-auto left-0 bottom-0 h-[344px] -z-10 object-cover" />
+        <Image src={grad2right} alt="grad2r" className="absolute w-[200px] sm:w-[280px] md:w-[360px] lg:w-[480px] xl:w-auto right-0 bottom-0 h-[344px] -z-10 object-cover" />
         <Toaster />
       </section>
       {userData && (
         <section className="relative h-[765px] w-full mt-6">
           <Image src={mainBG} className="w-full h-[765px] object-cover object-top absolute -z-10" alt="img" />
-          <div>
-            <h4 className="font-Judson text-[36px] text-center py-10 font-bold">Konfirmasi Undangan Wisuda</h4>
+          <div className="px-2">
+            <h4 className="font-Judson text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] text-center py-10 font-bold">Konfirmasi Undangan Wisuda</h4>
             <p className="text-center font-Karla text-[16px] font-semibold">Token : {userData.token_inv}</p>
             <form name="form-komentar" className="max-w-xl mx-auto mt-14" onSubmit={handleForms}>
               <input
