@@ -13,6 +13,7 @@ const config: Config = {
         Jacques_Francois: ["Jacques Francois", "serif"],
         Karla: ["Karla", "sans-serif"],
         "Kaushan-Script": ["Kaushan Script", "cursive"],
+        Poppins: ["Poppins", "sans-serif"],
       },
     },
   },
