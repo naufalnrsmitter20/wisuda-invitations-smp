@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <MediaPartner />
-      <div className="h-4 w-full"></div>
       <Section1 />
       <Invitation />
       <Gallery />
       <SaveDate />
       <SusunanAcara />
       <Maps />
+      <MediaPartner />
+      <div className="h-4 w-full"></div>
       <Footer />
     </>
   );
