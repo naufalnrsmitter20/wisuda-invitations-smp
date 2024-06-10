@@ -15,8 +15,8 @@ export default function Header() {
     <header className="relative h-screen w-full">
       <Image src={mainBG} alt="mainbg" className="absolute object-cover -z-10 w-full h-screen" />
       <nav className="w-full h-auto flex justify-between px-6 pt-6">
-        <Image src={logoSMP} alt="SMPN 5 Kepanjen" />
-        <Image src={logoKemendikbud} alt="SMPN 5 Kepanjen" />
+        <Image src={logoSMP} alt="SMPN 5 Kepanjen" className="scale-50 md:scale-75 lg:scale-90 xl:scale-100" />
+        <Image src={logoKemendikbud} alt="SMPN 5 Kepanjen" className="scale-50 md:scale-75 lg:scale-90 xl:scale-100" />
       </nav>
       <main className="mx-auto max-w-5xl mt-16">
         <h2 className="font-Poppins text-[20px] md:text-[26px] lg:text-[30px] font-normal xl:text-[36px] uppercase text-center">Undangan</h2>
