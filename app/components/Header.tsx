@@ -33,7 +33,7 @@ export default function Header() {
           </Link>
         </div>
       </footer>
-      <h3 className="font-Poppins text-[20px] mt-10 sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[28px]  text-center">Media Partner</h3>
+      <h3 className="font-Poppins text-[14px] mt-10 text-center">Media Partner</h3>
 
       <div className="mx-auto mt-6">
         <Image width={60} height={60} src={smktelkommalang} className="mx-auto lg:scale-125" alt="smktelkommalang" />
